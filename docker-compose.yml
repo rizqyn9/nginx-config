@@ -8,6 +8,9 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    environment:
+        - LOCAL_IP=foobar.com
     volumes:
-    - ./:/var/www
-    - ./nginx/conf.d/:/etc/nginx/conf.d/
+        - ./:/var/www
+        - ./nginx/conf.d/:/etc/nginx/conf.d/
+        - /var/run/docker.sock:/tmp/docker.sock:ro

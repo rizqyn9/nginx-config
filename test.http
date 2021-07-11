@@ -3,3 +3,6 @@ GET http://blog.localhost
 
 ###
 GET http://test2.localhost
+
+###
+GET http://portfolio.localhost HTTP/1.1

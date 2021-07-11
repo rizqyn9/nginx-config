@@ -1,0 +1,5 @@
+###
+GET http://blog.localhost
+
+###
+GET http://test2.localhost
